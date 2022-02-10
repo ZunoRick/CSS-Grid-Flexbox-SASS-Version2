@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+  .tres-columnas-flex{
+    display: flex;
+    gap: 2rem;
+    width: min(90%, 1000px);
+    margin: 0 auto;
+  }
+  .columna{
+    flex-grow: 1;
+  }
+}
