@@ -392,7 +392,7 @@ p{
 
 .contenido-newsletter{
   display: grid;
-  grid-template-rows: repeat(2, 30rem);
+  grid-template-rows: repeat(2, 40rem);
   gap: var(--separacion);
 }
 
