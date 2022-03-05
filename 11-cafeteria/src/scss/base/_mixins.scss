@@ -1,0 +1,33 @@
+@use 'variables' as v;
+
+@mixin telefono {
+  @media (min-width: v.$telefono) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: v.$tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: v.$desktop) {
+    @content;
+  }
+}
+
+@mixin grid($colums, $separacion){
+  display: grid;
+  grid-template-columns: repeat($colums, 1fr);
+  gap: $separacion;
+}
+
+@mixin prefix($prop, $value) {
+	#{$prop}: #{$value};
+	-webkit-#{$prop}: #{$value};
+	-moz-#{$prop}: #{$value};
+	-ms-#{$prop}: #{$value};
+	-o-#{$prop}: #{$value};
+}
